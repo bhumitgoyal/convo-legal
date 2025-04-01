@@ -121,7 +121,7 @@ def generate_verdict(messages):
         chat = ChatOpenAI(
             model="gpt-3.5-turbo",  # Can use "gpt-3.5-turbo" for lower cost
             temperature=0.3,  # Lower temperature for more predictable responses
-            api_key=os.environ.get("OPENAI_API_KEY"):
+            api_key=os.environ.get("OPENAI_API_KEY")
         )
         
         # Format the conversation for the AI
