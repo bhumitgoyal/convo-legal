@@ -104,12 +104,12 @@ def generate_verdict(messages):
         messages (list): List of dictionaries containing speaker and message content
     
     Returns:
-        dict: Contains summary and compromise suggestion
+        dict: Contains summary and compromise suggestion.
     """
     try:
         # Initialize the ChatOpenAI model
         chat = ChatOpenAI(
-            model="gpt-4",  # Can use "gpt-3.5-turbo" for lower cost
+            model="gpt-3.5-turbo",  # Can use "gpt-3.5-turbo" for lower cost
             temperature=0.3,  # Lower temperature for more predictable responses
             api_key=os.environ.get("OPENAI_API_KEY")
         )
